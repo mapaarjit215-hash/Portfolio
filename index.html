@@ -1,102 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arjit Sharma | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> PORTFOLIO | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <nav>
-        <h2>Arjit Sharma</h2>
+    <!-- Animated Background -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Navbar -->
+    <header>
 
-<section class="hero">
-    <img src="profile.jpg" alt="Profile">
-    <h1>Hello, I'm Arjit Sharma</h1>
-    <p>B.Sc. Student | Programmer | YouTube Creator</p>
+        <nav class="navbar">
 
-    <a href="#contact" class="btn">Hire Me</a>
-</section>
+            <div class="logo">
+                Arjit<span>Sharma</span>
+            </div>
 
-<section id="about">
-<h2>About Me</h2>
+            <ul class="nav-links">
 
-<p>
-I am a B.Sc. student passionate about programming, web development,
-Minecraft content creation, and learning new technologies.
-</p>
+                <li><a href="#home">Home</a></li>
 
-</section>
+                <li><a href="#about">About</a></li>
 
-<section id="skills">
+                <li><a href="#skills">Skills</a></li>
 
-<h2>Skills</h2>
+                <li><a href="#projects">Projects</a></li>
 
-<div class="cards">
+                <li><a href="#education">Education</a></li>
 
-<div class="card">C Programming</div>
-<div class="card">HTML</div>
-<div class="card">CSS</div>
-<div class="card">JavaScript</div>
-<div class="card">Git & GitHub</div>
+                <li><a href="#contact">Contact</a></li>
 
-</div>
+            </ul>
 
-</section>
+            <div class="menu-btn">
+                <i class="ri-menu-3-line"></i>
+            </div>
 
-<section id="projects">
+        </nav>
 
-<h2>Projects</h2>
+    </header>
 
-<div class="cards">
+    <!-- Hero Section -->
 
-<div class="card">
-<h3>Portfolio Website</h3>
-<p>Responsive personal portfolio.</p>
-</div>
+    <section class="hero" id="home">
 
-<div class="card">
-<h3>Student Management System</h3>
-<p>C programming project.</p>
-</div>
+        <div class="hero-left">
 
-<div class="card">
-<h3>YouTube Gaming Channel</h3>
-<p>Gaming videos and tutorials.</p>
-</div>
+            <h3>Hello, I'm</h3>
 
-</div>
+            <h1>Arjit Sharma</h1>
 
-</section>
+            <h2>
+                <span class="typing"></span>
+            </h2>
 
-<section id="contact">
+            <p>
 
-<h2>Contact</h2>
+                Passionate MERN Stack Developer and B.Sc. Student who loves
+                creating modern websites, solving problems, and making
+                YouTube content.
 
-<p>Email: mapa.arjit215@email.com</p>
+            </p>
 
-<p>GitHub: github.com/mapaarjit215-hash</p>
+            <div class="hero-buttons">
 
-</section>
+                <a href="resume.pdf" class="btn primary" target="_blank">
+                    <i class="ri-download-line"></i>
+                    Download Resume
+                </a>
 
-<footer>
+                <a href="#contact" class="btn secondary">
+                    Contact Me
+                </a>
 
-<p>© 2026 Arjit Sharma. All Rights Reserved.</p>
+            </div>
 
-</footer>
+            <div class="social-icons">
 
-<script src="script.js"></script>
+                <a href="https://github.com/mapaarjit215-hash" target="_blank">
+                    <i class="ri-github-fill"></i>
+                </a>
+
+                <a href="#">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+
+                <a href="#">
+                    <i class="ri-instagram-line"></i>
+                </a>
+
+                <a href="https://www.youtube.com/@MrfalanaG" target="_blank">
+                    <i class="ri-youtube-fill"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <div class="profile-card">
+
+                <img src="profile.jpeg" alt="Arjit Sharma">
+
+                <div class="glow-circle"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-container">
+
+            <div class="about-card">
+
+                <h3>Who am I?</h3>
+
+                <p>
+                    I'm <strong>Arjit Sharma</strong>, a passionate
+                    <strong>B.Sc. Student</strong>,
+                    <strong>Web Developer</strong>,
+                    <strong>MERN Stack Developer</strong>,
+                    and <strong>YouTube Creator</strong>.
+
+                    I enjoy building beautiful websites, learning modern
+                    technologies, and solving real-world problems using code.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="skills">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i class="ri-html5-fill"></i>
+                <h3>HTML5</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="ri-css3-fill"></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="ri-javascript-fill"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="ri-reactjs-line"></i>
+                <h3>React</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="ri-nodejs-line"></i>
+                <h3>Node.js</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="ri-database-2-line"></i>
+                <h3>MongoDB</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="ri-github-fill"></i>
+                <h3>Git & GitHub</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="ri-code-box-fill"></i>
+                <h3>C Programming</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A modern responsive portfolio built with
+                    HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Student Management System</h3>
+
+                <p>
+                    A C programming project for managing student records.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>MERN Stack Project</h3>
+
+                <p>
+                    Full-stack web application using
+                    MongoDB, Express, React and Node.js.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="education">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-card">
+                <h3>Bachelor of Science (B.Sc.)</h3>
+                <p>Currently Pursuing</p>
+                <span>Learning Web Development, MERN Stack & Programming</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CERTIFICATES ================= -->
+
+    <section class="certificates">
+
+        <h2 class="section-title">Certificates</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Web Development</h3>
+                <p>Add your certificate details here.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>MERN Stack</h3>
+                <p>Add your certificate details here.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Programming</h3>
+                <p>Add your certificate details here.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-box">
+
+            <p><strong>Email</strong></p>
+            <p>mapa.arjit215@gmail.com</p>
+
+            <br>
+
+            <p><strong>GitHub</strong></p>
+
+            <a href="https://github.com/mapaarjit215-hash" target="_blank">
+                github.com/mapaarjit215-hash
+            </a>
+
+            <br><br>
+
+            <p><strong>YouTube</strong></p>
+
+            <p>MrfalanaG</p>
+
+            <br>
+
+            <a href="resume.pdf" class="btn primary" target="_blank">
+                Download Resume
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Arjit Sharma</h3>
+
+        <p>
+            B.Sc. Student • Web Developer • MERN Stack Developer • YouTube Creator
+        </p>
+
+        <p class="copyright">
+            © 2026 Arjit Sharma. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
